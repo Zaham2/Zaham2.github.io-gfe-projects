@@ -1,0 +1,25 @@
+@use './colors' as *;
+
+html[data-theme='dark'] {
+    --background-color: #{$black};
+    --text-color: #{$white};
+    --btn-bg-color: #{$white};
+    --btn-text-color: #{$black};
+    --card-bg-color: #{$darkgray};
+}
+
+html[data-theme='light'] {
+    --background-color: #{$white};
+    --text-color: #{$black};
+    --btn-bg-color: #{$indigo};
+    --btn-text-color: #{$white};
+}
+
+html[data-theme='gray'] {
+    --background-color: #{$gray};
+    --text-color: #{$black};
+    --btn-bg-color: #{$indigo};
+    --btn-text-color: #{$white};
+    --card-bg-color: #{$white};
+}
+

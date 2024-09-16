@@ -1,0 +1,99 @@
+@use './colors' as *;
+@use './shared' as *;
+// this is handled in the variants file
+
+.primary {
+    background-color: #{$indigo};
+    color: #{$white};
+
+    &:focus {
+        background-color: #{$white};
+        color: #{$indigo};
+    }
+
+    &:hover {
+        background-color: #{$lightblue};
+        color: #{$black};
+    }
+
+    &:active {
+        background-color: #{$red};
+    }
+}
+
+.secondary {
+    background-color: #{$white};
+    color: #{$indigo};
+
+    &:focus {
+        background-color: #{$indigo};
+        color: #{$black};
+    }
+
+    &:hover {
+        background-color: #{$lightblue};
+        color: #{$black};
+    }
+
+    &:active {
+        background-color: #{$red};
+    }
+}
+
+.tertiary {
+    background-color: #{$indigo};
+    color: #{$white};
+
+    &:focus {
+        background-color: #{$white};
+        color: #{$indigo};
+    }
+
+    &:hover {
+        background-color: #{$lightblue};
+        color: #{$black};
+    }
+
+    &:active {
+        background-color: #{$red};
+    }
+}
+
+.link {
+    border: none;
+    width: auto;
+    background-color: #{$page-bg-color};
+    color: #{$lightblue};
+
+    &:focus {
+        background-color: #{$page-bg-color};
+        color: #{$indigo};
+    }
+
+    &:hover {
+        background-color: #{$page-bg-color};
+        color: #{$black};
+    }
+
+    &:active {
+        background-color: #{$red};
+    }
+}
+
+.destructive {
+    background-color: #{$red};
+    color: #{$white};
+
+    &:focus {
+        color: #{$black};
+    }
+
+    &:hover {
+        background-color: #{$lightblue};
+        color: #{$black};
+    }
+
+    &:active {
+        color: #{$black}
+    }
+}

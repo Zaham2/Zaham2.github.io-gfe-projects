@@ -1,0 +1,83 @@
+@use './assets/scss/themes' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  border: 1px solid black;
+  width: 340px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--card-bg-color);
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 8px;
+  height: 32px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top:20px;
+}
+
+a {
+  font-size: 24px;
+}
+
+.theme-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.theme-btn {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  border-radius: 12px;
+}
+
+.theme-btn:hover {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

@@ -1,0 +1,50 @@
+@use './colors' as *;
+@use './shared' as *;
+
+.primary {
+    background-color: #{$indigo};
+    color: #{$white};
+
+    
+}
+
+.secondary {
+    background-color: #{$white};
+    color: #{$black};
+
+    // &:hover {
+    //     background-color: #{$lightblue};
+    // }
+}
+
+.tertiary {
+    background-color: $page-bg-color; // this or transparent
+    color: #{$indigo};
+
+    // &:hover {
+    //     background-color: #{$lightblue};
+    // }
+}
+
+.destructive {
+    background-color: #{$red};
+    color: #{$white};
+    
+    // &:hover {
+    //     background-color: #{$lightblue};
+    // }
+}
+
+.link {
+    background-color: #{$page-bg-color};
+    color: #{$indigo};
+
+    // &:hover {
+    //     background-color: #{$lightblue};
+    // }
+}
+
+// .icon {
+//     display: inline-flex;
+//     column-gap: 8px;
+// }
